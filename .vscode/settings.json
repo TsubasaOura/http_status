@@ -1,0 +1,20 @@
+{
+  "reactSnippets.settings.prettierEnabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "python.linting.banditEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["--max-line-length", "120"],
+  "python.linting.pylintEnabled": false,
+  "python.analysis.extraPaths": ["venv/lib/python3.11/site-packages"],
+  "black-formatter.args": ["--line-length=80"],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "editor.wordWrap": "on"
+}
