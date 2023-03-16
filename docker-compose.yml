@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  api:
+    container_name: "ST-API"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/python
+    command: python3 main.py
