@@ -1,6 +1,5 @@
 FROM python:3.10-buster
-WORKDIR /var/www/html
-# ENV POETRY_HOME=/opt/poetry
+WORKDIR /python
 RUN pip install poetry && \
     poetry config --local virtualenvs.create true && \
     poetry config --local cache-dir .cache/pypoetry && \
