@@ -5,4 +5,4 @@ RUN pip install poetry && \
     poetry config --local virtualenvs.create true && \
     poetry config --local cache-dir .cache/pypoetry && \
     poetry config --local virtualenvs.in-project true
-ENV PATH=/var/www/html/.venv/bin:$PATH
+ENV PATH=/python/.venv/bin:$PATH
